@@ -57,7 +57,7 @@ const Convert = ({language, text}) => {
 	}, [language, debouncedText])*/
 
 	useEffect(() => {
-		fetch('http://127.0.0.1:5000/translate', {
+		fetch('https://git.heroku.com/widget-server.git', {
 			method: 'POST',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
